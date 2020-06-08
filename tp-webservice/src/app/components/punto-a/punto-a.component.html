@@ -1,0 +1,106 @@
+<br>
+<div class="row">
+    <section class="col-md-8 d-none d-md-block">
+        <div>
+            <div class="card-header bg-info text-center ">
+                <h5 class="card-title">Conversor de Divisas</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table ">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td><img src="/assets/img/eeuu.png" alt="" width="30" height="30"><br> USD</td>
+                            <td><img src="/assets/img/union-europea.png" alt="" width="30" height="30"><br>EUR</td>
+                            <td><img src="/assets/img/granBretaña.png" alt="" width="30" height="30"><br>GBP</td>
+                            <td><img src="/assets/img/rusia.png" alt="" width="30" height="30"><br>RUB</td>
+                            <td><img src="/assets/img/china.png" alt="" width="30" height="30"><br>CNY</td>
+                            <td><img src="/assets/img/argentina.png" alt="" width="30" height="30"><br>ARS</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/img/eeuu.png" alt="" width="30" height="30">USD</td>
+                            <td>1.000000</td>
+                            <td>0.919901</td>
+                            <td>0.811469</td>
+                            <td>{{Rub1}}</td>
+                            <td>{{Cny1}}</td>
+                            <td>{{Ars1}}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/img/union-europea.png" alt="" width="30" height="30">EUR</td>
+                            <td>1.087074</td>
+                            <td>1.000000</td>
+                            <td>0.882127</td>
+                            <td>{{Rub2}}</td>
+                            <td>{{Cny2}}</td>
+                            <td>{{Ars2}}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/img/granBretaña.png" alt="" width="30" height="30">GBP</td>
+                            <td>1.232332</td>
+                            <td>1.133623</td>
+                            <td>1.000000</td>
+                            <td>{{Rub3}}</td>
+                            <td>{{Cny3}}</td>
+                            <td>{{Ars3}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <aside class="col-sm-12 col-md-4">
+        <div class="card bg-info">
+            <div class="card-header text-center">
+                Conversor de divisas
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="txtcantidad">Cantidad</label>
+                        <input id="cant" class="form-control" type="number" name="valor" placeholder="Cantidad" [(ngModel)]="valor">
+                    </div>
+                    <div class="form-group">
+                        <label for="textde">De</label>
+                        <select class="form-control" id="control1" name="control1" [(ngModel)]="moneda1">
+                            <option value="USD">USD Dolares EEUU</option>
+                            <option value="ARS">ARS Pesos Argentinos</option>
+                            <option value="EUR">EUR Euro</option>
+                            <option value="GBP">GBP Libra Esterlina</option>
+                            <option value="RUB">RUB Rublo Ruso</option>
+                            <option value="CNY">CNY Yuan</option>
+                            
+                            <!--<option>JPY Yen</option>
+                            <option>CNY Yuan</option>
+                            <option>AUD Dolar Australiano</option>
+                            <option>BTC Bitcoin</option> -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="txta">A</label>
+                        <select class="form-control" id="control2" name="control2" [(ngModel)]="moneda2">
+                            <option value="ARS">ARS Pesos Argentinos</option>
+                            <option value="USD">USD Dolares EEUU</option>
+                            <option value="EUR">EUR Euro</option>
+                            <option value="GBP">GBP Libra Esterlina</option>
+                            <option value="RUB">RUB Rublo Ruso</option>
+                            <option value="CNY">CNY Yuan</option>
+
+                            <!--<option>JPY Yen</option>
+                            <option>CNY Yuan</option>
+                            <option>AUD Dolar Australiano</option>
+                            <option>BTC Bitcoin</option> -->
+                        </select>
+                    </div>
+                    <div class="form-group ">
+                        <label class="form-control" step="0.01">{{resultado}}</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning btn-block btn-sm" 
+                        (click)="cargarResultado()">Convertir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+</div>

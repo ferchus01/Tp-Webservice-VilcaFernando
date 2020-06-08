@@ -1,0 +1,384 @@
+<br>
+<div class="row">
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/aries.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Aries
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/leo.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Leo
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/sagitario.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Sagitario
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/tauro.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Tauro
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/virgo.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Virgo
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/capricornio.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Capricornio
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/geminis.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Geminis
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/libra.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Libra
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/acuario.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Acuario
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0 mb-2">
+        <div class="media">
+            <img src="/assets/img/cancer.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Cancer
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0">
+        <div class="media">
+            <img src="/assets/img/escorpio.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Escorpio
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-6 col-md-4 text-center border-0">
+        <div class="media">
+            <img src="/assets/img/piscis.png" width="70" height="70" class="mr-1 mb-1" alt="img">
+            <div class="media-body">
+                <div class="alert alert-success" role="alert">
+                    Piscis
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row form-group container">
+    <input type="text" class="form-control col-3" name="fecha" placeholder="yyyy-mm-dd" [(ngModel)]="fecha">
+    <button type="button" class="btn btn-warning btn-block btn-sm col-3" (click)="cargarResultado()">Ingresar</button>
+</div>
+<br>
+<div class="row">
+    <div class="card col-md-12 border-0" *ngIf="'Aries'==resultado" id="aries">
+        <div class="card-header headerhor"> Aries</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/aries.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="tauro" *ngIf="'Taurus'==resultado">
+        <div class="card-header headerhor"> Tauro</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/tauro.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="geminis" *ngIf="'Gemini'==resultado">
+        <div class="card-header headerhor"> Geminis</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/geminis.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="cancer" *ngIf="'Cancer'==resultado">
+        <div class="card-header headerhor">Cancer</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/cancer.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="leo" *ngIf="'Leo'==resultado">
+        <div class="card-header headerhor"> Leo</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/leo.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="virgo" *ngIf="'Virgo'==resultado">
+        <div class="card-header headerhor"> Virgo</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/virgo.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="libra" *ngIf="'Libra'==resultado">
+        <div class="card-header headerhor"> Libra</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/libra.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="escorpio" *ngIf="'Scorpio'==resultado">
+        <div class="card-header headerhor"> Escorpio</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/escorpio.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="sagitario" *ngIf="'Sagittarius'==resultado">
+        <div class="card-header headerhor"> Sagitario</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/sagitario.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="capricornio" *ngIf="'Capricorn'==resultado">
+        <div class="card-header headerhor"> Capricornio</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/capricornio.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="acuario" *ngIf="'Aquarius'==resultado">
+        <div class="card-header headerhor"> Acuario</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/acuario.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-12 border-0" id="piscis" *ngIf="'Pisces'==resultado">
+        <div class="card-header headerhor"> Piscis</div>
+        <div class="card-body ">
+            <div class="media">
+                <div class="media-body">
+                    <b>Horóscopo de hoy:</b> Recuerdos del pasado volverán a tu mente y esto te provocará
+                    ansiedades ya olvidadas. Vive tu presente y deja el pasado de lado.
+                    <br>
+                    <b>Amor:</b> Buscarás la compañía de tu pareja para sentirte mejor el día de hoy. Estarás
+                    muy necesitado de amor y cariño.
+                    <br>
+                    <b>Riqueza:</b> Para poder llegar a la cima es necesario transitar un largo camino. Lograrás
+                    tus objetivos pero te llevará trabajo hacerlo.
+                    <br>
+                    <b>Bienestar:</b> Cumple con tus responsabilidades lo mejor posible, sin esperar ningún tipo
+                    de felicitación. Hazlo porque es tu deber, no para satisfacer tu ego.
+                </div>
+                <img src="/assets/img/piscis.png" width="100" height="100" alt="img">
+            </div>
+        </div>
+    </div>
+</div>
+<br>
